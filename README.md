@@ -1,0 +1,1 @@
+Aplikacja powstawła w zespole 3 osobowym w metodologi scrum. Aplikacja napisa w Java Script mająca po podaniu współrzędnych przez użytkownika narysować i obliczyć pole oraz obwód wybranej figury. Odpowiadałem za figurę czworokąta. Funkcje napisane przeze mnie to : rectanglePrint point comparePoint sideLenght drawRectangle collinearity
