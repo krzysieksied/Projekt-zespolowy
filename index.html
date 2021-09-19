@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-avesome/all.min.css">
+    <title>Project 2-3</title>
+
+</head>
+<body>
+    <div id="container">
+        <div id="work-space">
+            <canvas width="960" height="720" id="canvas"></canvas>
+            <canvas width="960" height="720" id="canvas-coordinate-system"></canvas>
+            <i class="fas fa-trash clear-canvas"></i>
+        </div>
+          
+        <div id="toolbar"><h2>Przybornik</h2>
+            <label>
+                <input id="checkbox-coordinate-system" type="checkbox" checked> Pokaż układ współrzędnych
+            </label>
+
+            <div id="toolbar-icons">
+                <input type="image" src="./img/rectangular-64.png" id="rectangle-icon">
+                <input type="image" src="./img/triangle-64.png" id="triangle-icon">
+                <input type="image" src="./img/circle-64.png" id="circle-icon">
+            </div>
+
+            <label for="kolor"> Wybór koloru 
+                <input type="color" name="kolor" id="kolor"> 
+            </label>
+
+            <div>
+                <label>
+                    <input type="image" src="./img/question-mark.png" id="help"  value="Pomoc">
+                </label>
+            </div>
+
+            <div id="rectangle-form" class="figure-inputs-form">
+                <div class="figure-input-row">
+                    <p>Współrzędne wierzchołka A:</p>
+                        <input type="number" placeholder="0" id="aX-rectangle">
+                        <input type="number" placeholder="0" id="aY-rectangle">
+                </div>
+                <div class="figure-input-row">
+                    <p>Współrzędne wierzchołka B:</p>
+                        <input type="number" placeholder="0" id="bX-rectangle">
+                        <input type="number" placeholder="0" id="bY-rectangle">
+                </div>
+                <div class="figure-input-row">
+                    <p>Współrzędne wierzchołka C:</p>
+                        <input type="number" placeholder="0" id="cX-rectangle">
+                        <input type="number" placeholder="0" id="cY-rectangle">
+                </div>
+                <div class="figure-input-row">
+                    <p>Współrzędne wierzchołka D:</p>
+                        <input type="number" placeholder="0" id="dX-rectangle">
+                        <input type="number" placeholder="0" id="dY-rectangle">
+                </div>
+                <input type="button" value="Rysuj czworokąt" id="rectangle-input-draw" class="figure-input-draw">
+            </div>
+
+            <div id="triangle-form" class="figure-inputs-form">
+                <div class="figure-input-row">
+                    <p>Współrzędne wierzchołka A:</p>
+                        <input type="number" placeholder="0" id="aX-triangle">
+                        <input type="number" placeholder="0" id="aY-triangle">
+                </div>
+                <div class="figure-input-row">
+                    <p>Współrzędne wierzchołka B:</p>
+                        <input type="number" placeholder="0" id="bX-triangle">
+                        <input type="number" placeholder="0" id="bY-triangle">
+                </div>
+                <div class="figure-input-row">
+                    <p>Współrzędne wierzchołka C:</p>
+                        <input type="number" placeholder="0" id="cX-triangle">
+                        <input type="number" placeholder="0" id="cY-triangle">
+                </div>
+                <input type="button" value="Rysuj trójkąt" id="triangle-input-draw" class="figure-input-draw">
+            </div>
+
+            <div id="circle-form" class="figure-inputs-form">
+                <div class="figure-input-row">
+                    <p>Współrzędne środka:</p>
+                        <input type="number" placeholder="0" id="aX-circle">
+                        <input type="number" placeholder="0" id="aY-circle">
+                </div>
+                <div class="figure-input-row">
+                    <p>Długość promienia:</p>
+                        <input type="number" min="1" placeholder="0" id="r-circle">
+                </div>
+                <input type="button" value="Rysuj okrąg" id="circle-input-draw" class="figure-input-draw">
+            </div>
+        </div>     
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/features.js"></script>
+    <script src="./js/help.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>

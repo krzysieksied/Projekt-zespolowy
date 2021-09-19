@@ -1,0 +1,95 @@
+body {
+    margin: 0 auto;
+    display: flex;
+    background-color: #ddd;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+#container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-grow: 1;
+    max-width: 1240px;
+    height: 720px;
+    padding-top: 50px;
+}
+#work-space, #toolbar {
+    background-color: white;
+}
+#work-space {
+    width: 960px;
+    position: relative;
+}
+#canvas-coordinate-system {
+    position: absolute;
+    left: 0;
+}
+#toolbar {
+    width: 280px;
+    margin-left: 10px;
+    text-align: center;
+}
+#toolbar h2 {
+    text-decoration: underline;
+}
+#toolbar-icons {
+    margin-top: 25px;
+}
+#toolbar-icons input[type=image] {
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 60px;
+}
+.clear-canvas {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    cursor: pointer;
+    opacity: 0.15;
+    color: #A261FF;
+}
+
+
+.figure-inputs-form {
+    display: none;
+    margin-top: 30px;
+}
+.figure-inputs-form p {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+.figure-inputs-form input[type=number] {
+    width: 40%;
+    height: 18px;
+}
+.figure-input-row {
+    margin-top: 15px;
+}
+.figure-input-draw {
+    width: 70%;
+    height: 35px;
+    background-color: #737373;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+#r-circle {
+    width: 85%;
+}
+
+
+#help {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+#swal2-content {
+    text-align: justify;
+}

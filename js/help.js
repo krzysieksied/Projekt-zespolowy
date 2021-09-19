@@ -1,0 +1,9 @@
+const btnShow = document.getElementById('help');
+btnShow.addEventListener('click',() =>{
+    swal.fire({
+        title: "Pomoc",
+        html: "1. <u>Rysowanie czworokąta</u> - Aby narysować czworokąt kliknij ikone czworokąta, następnie podaj odpowiednio współrzędne czterech wierzchołków czworokąta, następnie kliknij przycisk <i>Rysuj czworokąt</i>.<br>2. <u>Rysowanie trójkąta</u> - Aby narysować trójkąt kliknij ikone trójkąta, następnie podaj odpowiednio współrzędne trzech wierzchołków trójkąta, następnie kliknij przycisk <i>Rysuj trójkąt</i>.<br>3. <u>Rysowanie okręgu</u> - Aby narysować okrąg kliknij ikone okręgu, następnie podaj odpowiednio współrzędne środka okręgu oraz długość promienia, nastepnie kliknij <i>Rysuj okrąg</i>.<br>4. <u>Zmiana koloru</u> - Aby zmienić kolor tworzonych figur kliknij przed tworzeniem figury na przycisk <i>Wybór koloru</i>, następnie na palecie kolorów ustaw docelowy kolor.<br>5. Pokazywanie i chowanie układu współrzędnych odbywa się za pomocą checkboxa <i>Pokaż układ współrzędnych</i>.<br>6. <u>Usuwanie powstałych figur</u> - Aby usunąć stworzone wcześniej figury najedź kursorem na płótno, w lewym górnym rogu pojawi się ikonka przycisku odpowiedzialnego za czyszczenie płótna.<br>7. <u>Określenie typu rysowanego trójkąta</u> - Typ rysowanego trójkąta (podział ze względu na boki i kąty) wyświetlany jest podczas jego rysowania.<br>8. <u>Błędne dane</u> - Po podaniu współrzęnych z których nie powstanie figura wyświetla się komunikat o nie powstaniu figury. Należy podać poprawne współrzędne",
+        icon: "info",
+        width: '550px'
+    });
+});
